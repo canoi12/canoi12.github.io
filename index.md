@@ -4,4 +4,4 @@ layout: home
 permalink: /
 ---
 
-# Canoi Blog and Portfolio 
+# Blog and Portfolio 
