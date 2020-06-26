@@ -66,7 +66,7 @@ function createMetaball(x, y)
 end
 
 function love.load()
-  metaball_image = love.graphics.newImage(“metaball.png”)
+  metaball_image = love.graphics.newImage("metaball.png")
   canvas = love.graphics.newCanvas(canvas_width,canvas_height)
 end
 
@@ -93,7 +93,7 @@ function createMetaball(x, y)
 end
 
 function love.load()
-  metaball_image = love.graphics.newImage(“nameofimage.extension”)
+  metaball_image = love.graphics.newImage("metaball.png")
   canvas = love.graphics.newCanvas(canvas_width,canvas_height)
 end
 
@@ -201,7 +201,7 @@ function createMetaball(x, y)
 end
 
 function love.load()
-  metaball_image = love.graphics.newImage("nameofimage.extension")
+  metaball_image = love.graphics.newImage("metaball.png")
   canvas = love.graphics.newCanvas(canvas_width,canvas_height)
   shadersrc = [[ 
     vec4 effect(vec4 color, Image texture, vec2 tex_coord, vec2 screen_coord) {
