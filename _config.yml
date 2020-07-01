@@ -5,6 +5,7 @@
 header_pages:
   - index.md
   - about.md
+  - documentation.md
 
 author:
  email: canoiaguiar@gmail.com

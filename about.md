@@ -1,5 +1,5 @@
 ---
-title: About
+title: /about
 permalink: /about/
 layout: page
 excerpt: My name is Canoi Gomes, Brazilian developer, i work mostly with C and Lua developing games and game tools. Actually i'm learning web and mobile development with React.
