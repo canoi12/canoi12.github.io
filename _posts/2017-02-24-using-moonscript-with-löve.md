@@ -138,5 +138,26 @@ love.draw = ->
   player\draw!
 ```
 
-Thats it! If it’s all ok, you now have a white rectangle in your screen. That is the way i found to use MoonScript and LÖVE, maybe had other ways, i’m still learning about it. Anyway, i’m loving the experience of to work with both!
+Thats it! If it’s all ok, you now have a white rectangle in your screen.
 
+Okay, but i need to call `moonc` every change i make in my game? And the codes seems a little mess.
+
+There are two options to solve that, `-w` and `-t`. With `-t` you can choose a directory where you transpiled code will be placed, and with `-w`, it init moonc in watch mode, so it seek for changes in your code and automatically transpile the changed file.
+
+The command will be like this `moonc -t game/ -w .`, basically we're saying "get the code in '.'(current dir) and transpile to 'game/'"
+
+*Remember!!*, your assets and other games stuff need to be put in the `game/` (or whatever you call it) folder, a structure i like to use is:
+
+```
+game/
+  assets/
+  ~lua code~
+src/
+  ~moon code~
+```
+
+`moonc -t game/ -w src/`
+
+For distribution is the same as LÖVE, just get the content in `game/`, zip and distribute.
+
+And this is it, hope you liked!
