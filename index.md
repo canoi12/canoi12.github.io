@@ -5,5 +5,3 @@ permalink: /
 ---
 
 # Blog and Portfolio 
-
-[/home](/home)
