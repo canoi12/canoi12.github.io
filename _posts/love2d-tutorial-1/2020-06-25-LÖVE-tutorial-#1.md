@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LÖVE Basics 1 - Lua basics
+type: Tutorial
 date: 2020-06-25 00:11:40 +00:00
 modified: 2020-06-25 00:11:40 +07:00
 tags: [programming, gamedev, love2d, tutorial]
