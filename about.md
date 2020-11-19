@@ -13,6 +13,6 @@ Working on a little engine called tiny coffee (tico).
 ##### links ✨
 
 - {{ site.author.email }}
-- [github](https://github.com/{{ site.author.username }})
+- [github](https://github.com/canoi12)
 - [twitter](https://twitter.com/{{ site.author.username }})
 - [itch.io](https://canoigomes.itch.io)
