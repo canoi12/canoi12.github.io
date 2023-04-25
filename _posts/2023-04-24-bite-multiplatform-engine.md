@@ -111,6 +111,7 @@ Pra ter o básico pra suportar shaders, por exemplo, seriam necessárias:
 - glGetShaderiv
 - glGetShaderInfoLog
 - glDeleteShader
+
 ---
 - glCreateProgram
 - glAttachShader
@@ -119,6 +120,7 @@ Pra ter o básico pra suportar shaders, por exemplo, seriam necessárias:
 - glGetProgramInfoLog
 - glDeleteProgram
 - glUseProgram
+
 ---
 
 Obviamente sem expor isso pro usuário, mas sim abstraindo o processo em outras funções:
