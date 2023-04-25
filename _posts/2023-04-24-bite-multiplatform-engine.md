@@ -50,7 +50,7 @@ Onde por trás vai ser criado o contexto específico pra cada plataforma:
 ```c
 #if defined(_WIN32)
 	#include <windows.h>
-#elif defined(__ESMCRIPTEN__)
+#elif defined(__EMSCRIPTEN__)
 	#include <emscripten.h>
 	#include <emscripten/html5.h>
 #else
