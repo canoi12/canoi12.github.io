@@ -24,18 +24,18 @@ static int l_graphics_fill_rectangle(lua_State* L) {
 	h = luaL_checknumber(L, 4);
 	set_texture(RENDER()->white_texture);
 	float vertices[] = {
-        x, y, c[0], c[1], c[2], c[3], 0.f, 0.f,
-        x + w, y, c[0], c[1], c[2], c[3], 1.f, 0.f,
-        x + w, y + h, c[0], c[1], c[2], c[3], 1.f, 1.f,
+		x, y, c[0], c[1], c[2], c[3], 0.f, 0.f,
+		x + w, y, c[0], c[1], c[2], c[3], 1.f, 0.f,
+		x + w, y + h, c[0], c[1], c[2], c[3], 1.f, 1.f,
 
-        x, y, c[0], c[1], c[2], c[3], 0.f, 0.f,
-        x, y + h, c[0], c[1], c[2], c[3], 0.f, 1.f,
-        x + w, y + h, c[0], c[1], c[2], c[3], 1.f, 1.f,
+		x, y, c[0], c[1], c[2], c[3], 0.f, 0.f,
+		x, y + h, c[0], c[1], c[2], c[3], 0.f, 1.f,
+		x + w, y + h, c[0], c[1], c[2], c[3], 1.f, 1.f,
 
     };
 
-    VertexFormat* v = (VertexFormat*)vertices;
-    push_vertices(VERTEX(), 6, v);
+	VertexFormat* v = (VertexFormat*)vertices;
+	push_vertices(VERTEX(), 6, v);
 }
 ```
 
@@ -131,10 +131,10 @@ local function add_path(path)
     package.path = path .. '?.lua;' .. path .. '?/init.lua;' .. package.path
 end
 return function(args)
-    add_path(sdl.GetBasepath())
-    local core = require 'core'
-    core.init(selene.args)
-    return core
+	add_path(sdl.GetBasepath())
+	local core = require 'core'
+	core.init(selene.args)
+	return core
 end
 ```
 
@@ -147,9 +147,9 @@ A ideia posteriormente é dar a possibilidade do dev escrever um `core/` persona
 	- Asset (Texture, Audio, Sprite, Tileset, Tilemap, ...)
 - ...
 
-E usar da modularidade do Lua pra fazer um runner e um editor, Também está nos planos de criar um módulo em C para lidar com `.zip` e um módulo em Lua pra fazer o build system usando isso, pra ser possível distribuir o executável junto do zip (ou concatenar em um executável único, mas isso mais pra frente).
+E usar da modularidade do Lua pra fazer um runner e um editor, e também está nos planos adicionar suporte à `.zip` e um módulo em Lua pra fazer o build system em cima disso, pra ser possível distribuir o executável junto do zip (ou concatenar em um executável único, mas isso mais pra frente).
 
-Também está nos planos fazer alguns comandos:
+Também está nos planos fazer alguns command lines:
 
 `./selene [build|run|edit|...] path/to/project`
 
