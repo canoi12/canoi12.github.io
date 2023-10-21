@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selene Engine [PT-BR]
+title: Selene Engine
 date: 2023-10-19T21:07:00
 type: Blog
 tags:
