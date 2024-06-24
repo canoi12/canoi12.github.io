@@ -85,12 +85,12 @@ que é uma tabela ASCII.
 
 Vamos analisar nosso arquivo usando um editor hexadecimal:
 
-![image](media/hex.png)
+![image](https://github.com/canoi12/canoi12.github.io/blob/master/_posts/arquivos_binarios/media/hex.png)
 
 Perceba como cada caractere tem um valor hexadecimal correspondente.
 Para entender esses valores você pode conferir a tabela ASCII abaixo.
 
-![image](media/ASCII.jpg)
+![image](https://github.com/canoi12/canoi12.github.io/blob/master/_posts/arquivos_binarios/media/ASCII.jpg)
 
 Então olhando com mais calma:
 
@@ -127,7 +127,7 @@ morto\].
 
 Representando em uma struct em C eu vou ter isso aqui:
 
-``` {.objectivec language="C" caption="Cabeçalho em C"}
+```c
 struct Header {
     char magic[2];
     char name_size;
@@ -147,7 +147,7 @@ dificultar um pouco no uso no programa.
 Uma convenção bem comum é setar um tamanho fixo de bytes para guardar
 uma string.
 
-``` {.objectivec language="C" caption="Cabeçalho com tamanho fixo de string"}
+```c
 struct Header {
     char magic[2];
     char name[32];
@@ -172,7 +172,7 @@ Escrevendo em um arquivo binário
 
 Mas vamos para o código em C.
 
-``` {.objectivec language="C" caption="Exemplo de escrita em C"}
+```c
 #include <stdio.>
 #include <string.h>
 
@@ -211,7 +211,7 @@ sendo bem simples, a gente só precisar usar o mesmo cabeçalho, e dessa
 vez ao invés de abrir o arquivo no modo de escrita binária (**wb**),
 irei abrir no modo de leitura binária (**rb**):
 
-``` {.objectivec language="C" caption="Exemplo de leitura em C"}
+```c
 #include <stdio.>
 #include <string.h>
 
@@ -252,7 +252,7 @@ parte. Ou seja, o 13 nós precisamos tratar como 1 e 3 tendo bytes
 separados, a mesma coisa pro 25. Poderia fazer um cabeçalho assim, por
 exemplo:
 
-``` {.objectivec language="C"}
+```c
 struct Header {
     char magic[2];
     char name_size[2];
