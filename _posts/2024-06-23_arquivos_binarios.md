@@ -2,7 +2,7 @@
 layout: post
 author:
 - Canoi Gomes
-date: 2024-06-23
+date: 2024-06-23T19:00:00
 title: Formatos Binários \#1 - Arquivos Binários
 type: Tutorial
 tags:
